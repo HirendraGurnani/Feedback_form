@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form action="">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="number" placeholder="Contact Number" />
+      <input type="text" placeholder="Email" />
+      
+      <!-- Simplified labels and added a common class for rating containers -->
+      <label for="">I clearly understand the values of our organization</label>
+      <div class="rating-container">
+        <span class="emoji">😠</span>
+        <input type="range" min="0" max="100" step="20" value="0" oninput="updateEmoji()" />
+      </div>
+      
+      <label for="">I know the objectives of this organization</label>
+      <div class="rating-container">
+        <span class="emoji">😠</span>
+        <input type="range" min="0" max="100" step="20" value="0" oninput="updateEmoji()" />
+      </div>
+      
+      <label for="">I believe my work is important for the organization to reach its goals</label>
+      <div class="rating-container">
+        <span class="emoji">😠</span>
+        <input type="range" min="0" max="100" step="20" value="0" oninput="updateEmoji()" />
+      </div>
+      
+      <label for="">I feel valued by the organization</label>
+      <div class="rating-container">
+        <span class="emoji">😠</span>
+        <input type="range" min="0" max="100" step="20" value="0" oninput="updateEmoji()" />
+      </div>
+
+      <label for=""><h3>Remark</h3></label>
+      <textarea name="" placeholder="Write your comment here" id="" rows="5"></textarea>
+      
+      <input type="submit" id="submit" onclick="message()" value="Submit" />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
